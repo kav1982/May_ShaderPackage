@@ -1,0 +1,13 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/contentModel.xml
+/modules.xml
+/projectSettingsUpdater.xml
+/.idea.May_ShaderPackage.iml
+# Datasource local storage ignored files
+/../../../../../../:\GitBook\May_ShaderPackage\.idea\.idea.May_ShaderPackage\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/

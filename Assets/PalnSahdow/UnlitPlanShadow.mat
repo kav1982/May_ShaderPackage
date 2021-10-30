@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UnlitPlanShadow
+  m_Shader: {fileID: 4800000, guid: f042484c05e45ad4bb3ee6bcd282c778, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: e3fbffd34756f1d438ca5de79c260cca, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Height: 1.03
+    - _HitColor: 0.276
+    - _Horizontal: 58
+    - _ObjHight: 1.13
+    - _ShadowFalloff: 0.673
+    - _ShadowY: 0
+    - _Vertical: 42
+    m_Colors:
+    - _LightDir: {r: 0.07, g: -0.02, b: -0.04, a: 0}
+    - _ShadowColor: {r: 0.16602886, g: 0.28867528, b: 0.38679248, a: 1}
