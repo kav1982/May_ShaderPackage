@@ -7,12 +7,12 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: mat
-  m_Shader: {fileID: 4800000, guid: 95020c0f118ad9d49b92e16b22722f18, type: 3}
-  m_ShaderKeywords: 
+  m_Name: UImask
+  m_Shader: {fileID: 4800000, guid: 970cd5d3d5379d24790736e40b9c1ddc, type: 3}
+  m_ShaderKeywords: ANIMATION_SHEET
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 1
+  m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
@@ -21,10 +21,6 @@ Material:
     m_TexEnvs:
     - _BumpMap:
         m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _BurnTex:
-        m_Texture: {fileID: 2800000, guid: f1032cdd14093d240a37d2560178ab4c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -39,24 +35,28 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _DissolveMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DistortMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _EmissionMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: e3fbffd34756f1d438ca5de79c260cca, type: 3}
+        m_Texture: {fileID: 2800000, guid: 836fecb057d86bc4fba6e31b6c413609, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskMap:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _NoiseMap:
-        m_Texture: {fileID: 2800000, guid: f37e9e56ee1b4504eb4620da67bb6bba, type: 3}
-        m_Scale: {x: 1, y: 1.06}
-        m_Offset: {x: 0, y: 0}
-    - _NoiseMap2:
-        m_Texture: {fileID: 2800000, guid: e78258f9777c2ef42b32c5eb3283ccde, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -67,35 +67,68 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SampleTex:
+        m_Texture: {fileID: 2800000, guid: ce19135408dfc734a8f5326d01aa3a43, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SecondaryDistortMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SecondaryTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _Angle: 0.42
-    - _Blend: -0.79
+    - _ALPHATEST_ON: 0
+    - _AniSheetSpeed: 6
+    - _AnimationSheet: 1
+    - _BlendMode: 0
     - _BumpScale: 1
-    - _BurnRange: -0.103
-    - _ClipOffset: 0.376
+    - _ClipUI: 0
+    - _Cull: 2
+    - _CullMode: 0
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
-    - _Dissolve: 0.125
+    - _Dissolve: 0
+    - _DissolveAni: 0
+    - _DissolveEdge: 0.1
+    - _DissolveFactor: 0.5
+    - _DissolveMode: 0
+    - _DissolveSoft: 0.2
+    - _Distort: 0
+    - _DistortFactor: 0.15
     - _DstBlend: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _Horizontal: 67
+    - _IsParticle: 0
+    - _Mask: 0
+    - _MaskAni: 0
+    - _MaxX: 1000
+    - _MaxY: 1000
     - _Metallic: 0
+    - _MinX: -1000
+    - _MinY: -1000
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _Range: 0.458
-    - _RangeOffset: -0.28
+    - _Rim: 0
     - _SmoothnessTextureChannel: 0
+    - _SoftRange: 1
+    - _Soft_Edge: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
+    - _TexBlendMode: 0
     - _UVSec: 0
-    - _Vertical: 9
     - _ZWrite: 1
+    - _rimPower: 5
     m_Colors:
+    - _AniSheetTile: {r: 4, g: 4, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _DissolveEdgeColor: {r: 1, g: 1, b: 1, a: 1}
+    - _DistortUVAni: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _FloatVector: {r: 1.25, g: 1.26, b: 1.17, a: 1.21}
-    - _RangeColor: {r: 49.197815, g: 6.9546647, b: 0, a: 1}
-    - _SparkColor: {r: 8.2454195, g: 4.6023154, b: 1.9057809, a: 1}
+    - _MainTexUVAni: {r: 0, g: 0, b: 0, a: 0}
+    - _TintColor: {r: 1, g: 1, b: 1, a: 1}
+    - _rimColor: {r: 1, g: 1, b: 1, a: 1}
