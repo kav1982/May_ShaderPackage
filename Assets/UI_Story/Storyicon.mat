@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: UImask
-  m_Shader: {fileID: 4800000, guid: 970cd5d3d5379d24790736e40b9c1ddc, type: 3}
+  m_Name: Storyicon
+  m_Shader: {fileID: 10750, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -48,7 +48,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 836fecb057d86bc4fba6e31b6c413609, type: 3}
+        m_Texture: {fileID: 2800000, guid: 9d97850132ed8974487f8c18494d5b52, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Mask:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MaskMap:
@@ -68,9 +72,9 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SampleTex:
-        m_Texture: {fileID: 2800000, guid: 0f44e20d7d4c24e4bac8f55a4b9cacef, type: 3}
-        m_Scale: {x: 0.25, y: 0.25}
-        m_Offset: {x: 0, y: 0.5}
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SecondaryDistortMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -81,14 +85,14 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _ALPHATEST_ON: 0
-    - _AniSheetSpeed: 8
+    - _AniSheetSpeed: 0
     - _AnimationSheet: 0
     - _BlendMode: 0
     - _BumpScale: 1
     - _ClipUI: 0
     - _Cull: 2
     - _CullMode: 0
-    - _Cutoff: 0.5
+    - _Cutoff: 0.47
     - _DetailNormalMapScale: 1
     - _Dissolve: 0
     - _DissolveAni: 0
@@ -124,11 +128,15 @@ Material:
     - _ZWrite: 1
     - _rimPower: 5
     m_Colors:
-    - _AniSheetTile: {r: 4, g: 4, b: 0, a: 0}
+    - _AniSheetTile: {r: 0, g: 0, b: 0, a: 0}
+    - _Center: {r: 0, g: 0, b: 0, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _DissolveEdgeColor: {r: 1, g: 1, b: 1, a: 1}
     - _DistortUVAni: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _HVAmount: {r: 1, g: 1, b: 0, a: 0}
     - _MainTexUVAni: {r: 0, g: 0, b: 0, a: 0}
+    - _Normal: {r: 0, g: 0, b: 1, a: 0}
+    - _Scale: {r: 1, g: 1, b: 1, a: 1}
     - _TintColor: {r: 1, g: 1, b: 1, a: 1}
     - _rimColor: {r: 1, g: 1, b: 1, a: 1}

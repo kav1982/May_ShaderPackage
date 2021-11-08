@@ -65,8 +65,7 @@
                     float time = anitime * _AniSheetSpeed;
                     float2 xy = floor(float2(time, time * d.x));
                     float2 ani = frac(xy * d.xy);
-                    o.aniuv = o.uv * d.xy + float2(ani.x, -ani.y);
-                    //o.aniuv = o.uv * d.xy; 
+                    o.aniuv = o.uv * d.xy + float2(ani.x, -ani.y);                     
                 #else
 					o.aniuv = o.uv * _SampleTex_ST.xy + _SampleTex_ST.zw;					                   
                 #endif
